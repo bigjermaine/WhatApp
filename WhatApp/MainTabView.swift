@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct MainTabView: View {
+    init() {
+        makeTabbarOpaque()
+    }
     var body: some View {
         TabView{
             Text("Updates")
@@ -41,6 +44,14 @@ struct MainTabView: View {
                 
             }
         }
+    }
+    
+    private func makeTabbarOpaque() {
+        let appearance = UITabBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        UITabBar.appearance().standardAppearance = appearance
+        UITabBar.appearance().scrollEdgeAppearance = appearance
+        
     }
 }
 
