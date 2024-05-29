@@ -12,6 +12,7 @@
 		D01C34B52BFDEB4B0006CB5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D01C34B42BFDEB4B0006CB5F /* Preview Assets.xcassets */; };
 		D01C35622BFDF3530006CB5F /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01C35612BFDF3530006CB5F /* MainTabView.swift */; };
 		D01C35752C0459C70006CB5F /* UpdatesTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01C35742C0459C70006CB5F /* UpdatesTabScreen.swift */; };
+		D01C357D2C0793A20006CB5F /* CallsTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01C357C2C0793A20006CB5F /* CallsTabScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		D01C34B42BFDEB4B0006CB5F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D01C35612BFDF3530006CB5F /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		D01C35742C0459C70006CB5F /* UpdatesTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatesTabScreen.swift; sourceTree = "<group>"; };
+		D01C357C2C0793A20006CB5F /* CallsTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsTabScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				D01C35742C0459C70006CB5F /* UpdatesTabScreen.swift */,
+				D01C357C2C0793A20006CB5F /* CallsTabScreen.swift */,
 			);
 			path = MainTabbar;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D01C35752C0459C70006CB5F /* UpdatesTabScreen.swift in Sources */,
+				D01C357D2C0793A20006CB5F /* CallsTabScreen.swift in Sources */,
 				D01C34AE2BFDEB490006CB5F /* WhatAppApp.swift in Sources */,
 				D01C35622BFDF3530006CB5F /* MainTabView.swift in Sources */,
 			);
