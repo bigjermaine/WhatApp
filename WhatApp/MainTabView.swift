@@ -13,7 +13,7 @@ struct MainTabView: View {
     }
     var body: some View {
         TabView{
-            Text("Updates")
+            UpdatesTabScreen()
             .tabItem {
                 Image(systemName: Tab.update.icon)
                 Text(Tab.update.title)
@@ -46,6 +46,7 @@ struct MainTabView: View {
         }
     }
     
+    // Note:prevent the tabbar from been opaqque 
     private func makeTabbarOpaque() {
         let appearance = UITabBarAppearance()
         appearance.configureWithOpaqueBackground()
