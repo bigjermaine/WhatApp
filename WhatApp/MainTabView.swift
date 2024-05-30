@@ -19,7 +19,7 @@ struct MainTabView: View {
                 Text(Tab.update.title)
                 
             }
-            Text("Update")
+            CallsTabScreen()
             .tabItem {
                 Image(systemName: Tab.calls.icon)
                 Text(Tab.calls.title)
