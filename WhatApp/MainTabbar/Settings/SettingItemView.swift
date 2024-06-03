@@ -8,18 +8,28 @@
 import SwiftUI
 
 struct SettingItemView: View {
+    let Item:SettingsItem
     var body: some View {
         HStack{
-           Image(systemName: "info.bubble.fill")
-                .padding(3)
-                .foregroundColor(.white)
-                .background(Color.blue)
-            Text("Chnage Profile Photo")
+            switch Item.imageType {
+            case .systemImage:
+                Image(systemName: Item.imageName)
+                    .padding(3)
+                    .foregroundColor(.white)
+                    .background(Item.backgroundColor)
+            case .assetImage:
+                Image(systemName: Item.imageName)
+                    .padding(3)
+                    .foregroundColor(.white)
+                    .background(Item.backgroundColor)
+            }
+            
+            Text(Item.title)
                 .font(.system(size: 18))
         }
     }
 }
 
 #Preview {
-    SettingItemView()
+    SettingItemView(Item: .account)
 }
