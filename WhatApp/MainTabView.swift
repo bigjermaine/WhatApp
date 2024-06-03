@@ -31,13 +31,13 @@ struct MainTabView: View {
                 Text(Tab.communities.title)
                 
             }
-            Text("Updates")
+            ChatTabbarView()
             .tabItem {
                 Image(systemName: Tab.chats.icon)
                 Text(Tab.chats.title)
                 
             }
-            Text("Updates")
+            SettingsTabScreen()
             .tabItem {
                 Image(systemName: Tab.settings.icon)
                 Text(Tab.settings.title)

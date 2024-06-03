@@ -12,19 +12,47 @@ struct ChatTabbarView: View {
     var body: some View {
         NavigationStack{
             List{
-                
+                ArchivedBox()
+                ForEach(0..<12){ x in
+                    ChanneltemView()
+                }
+                inboxFooterView()
             }
             .navigationTitle("Chats")
             .searchable(text: $searchText)
             .toolbar {
                 leadingNavItems()
                 trailingNavItems()
+                
             }
         }
     }
 }
 
 extension ChatTabbarView {
+    private func inboxFooterView() -> some View {
+        HStack{
+            Image(systemName: "lock.fill")
+            Text("Your personal messages are")
+            +
+            Text("end-to-end encrpted")
+                .foregroundStyle(.blue)
+        }
+        .foregroundColor(.gray)
+        .font(.caption)
+        .padding(.horizontal)
+        
+    }
+    private func ArchivedBox() -> some View {
+        Button{
+            
+        }label: {
+            Label("Archived Chats", systemImage: "archivebox.fill")
+                .bold()
+                .foregroundColor(.gray)
+        }
+    }
+    
     @ToolbarContentBuilder
     private func leadingNavItems() -> some ToolbarContent {
         ToolbarItem(placement: .topBarLeading) {
