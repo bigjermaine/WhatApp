@@ -10,7 +10,12 @@ import SwiftUI
 struct SettingItemView: View {
     var body: some View {
         HStack{
-            
+           Image(systemName: "info.bubble.fill")
+                .padding(3)
+                .foregroundColor(.white)
+                .background(Color.blue)
+            Text("Chnage Profile Photo")
+                .font(.system(size: 18))
         }
     }
 }

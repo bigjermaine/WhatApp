@@ -12,7 +12,9 @@ struct SettingsTabScreen: View {
     var body: some View {
         NavigationStack{
             List{
-                
+                Section{
+                    SettingItemView()
+                }
             }
             .navigationTitle("Settings")
             .searchable(text: $searchText)
