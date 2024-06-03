@@ -25,7 +25,7 @@ struct MainTabView: View {
                 Text(Tab.calls.title)
                 
             }
-            Text("Updates")
+            CommunityTabScreen()
             .tabItem {
                 Image(systemName: Tab.communities.icon)
                 Text(Tab.communities.title)
