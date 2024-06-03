@@ -17,6 +17,7 @@
 		D0ECB7C12C0D83FA00524ECE /* ChatTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ECB7C02C0D83FA00524ECE /* ChatTabbarView.swift */; };
 		D0ECB7C32C0E03F100524ECE /* ChanneltemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ECB7C22C0E03F100524ECE /* ChanneltemView.swift */; };
 		D0ECB7C62C0E07D400524ECE /* SettingsTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ECB7C52C0E07D400524ECE /* SettingsTabScreen.swift */; };
+		D0ECB7C82C0E089200524ECE /* SettingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ECB7C72C0E089200524ECE /* SettingItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		D0ECB7C02C0D83FA00524ECE /* ChatTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTabbarView.swift; sourceTree = "<group>"; };
 		D0ECB7C22C0E03F100524ECE /* ChanneltemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChanneltemView.swift; sourceTree = "<group>"; };
 		D0ECB7C52C0E07D400524ECE /* SettingsTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTabScreen.swift; sourceTree = "<group>"; };
+		D0ECB7C72C0E089200524ECE /* SettingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				D0ECB7C52C0E07D400524ECE /* SettingsTabScreen.swift */,
+				D0ECB7C72C0E089200524ECE /* SettingItemView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0ECB7C12C0D83FA00524ECE /* ChatTabbarView.swift in Sources */,
+				D0ECB7C82C0E089200524ECE /* SettingItemView.swift in Sources */,
 				D01C35752C0459C70006CB5F /* UpdatesTabScreen.swift in Sources */,
 				D0ECB7C62C0E07D400524ECE /* SettingsTabScreen.swift in Sources */,
 				D0ECB7C32C0E03F100524ECE /* ChanneltemView.swift in Sources */,
