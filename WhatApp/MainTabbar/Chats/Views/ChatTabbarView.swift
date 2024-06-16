@@ -14,7 +14,12 @@ struct ChatTabbarView: View {
             List{
                 ArchivedBox()
                 ForEach(0..<12){ x in
-                    ChanneltemView()
+                    NavigationLink{
+                        ChatRoomScreen()
+                    }label: {
+                        ChanneltemView()
+                    }
+                   
                 }
                 inboxFooterView()
             }

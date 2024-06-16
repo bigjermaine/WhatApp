@@ -14,6 +14,9 @@
 		D01C35752C0459C70006CB5F /* UpdatesTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01C35742C0459C70006CB5F /* UpdatesTabScreen.swift */; };
 		D01C357D2C0793A20006CB5F /* CallsTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01C357C2C0793A20006CB5F /* CallsTabScreen.swift */; };
 		D09275062C1E34A000C3A8AC /* ChatRoomScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09275052C1E34A000C3A8AC /* ChatRoomScreen.swift */; };
+		D09275082C1EE06700C3A8AC /* TextInputArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09275072C1EE06700C3A8AC /* TextInputArea.swift */; };
+		D092750B2C1F193900C3A8AC /* MessageListControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D092750A2C1F193900C3A8AC /* MessageListControllerViewController.swift */; };
+		D092750D2C1F1DB300C3A8AC /* MessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D092750C2C1F1DB300C3A8AC /* MessageListView.swift */; };
 		D0ECB7BE2C0D79D400524ECE /* CommunityTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ECB7BD2C0D79D400524ECE /* CommunityTabScreen.swift */; };
 		D0ECB7C12C0D83FA00524ECE /* ChatTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ECB7C02C0D83FA00524ECE /* ChatTabbarView.swift */; };
 		D0ECB7C32C0E03F100524ECE /* ChanneltemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ECB7C22C0E03F100524ECE /* ChanneltemView.swift */; };
@@ -31,6 +34,9 @@
 		D01C35742C0459C70006CB5F /* UpdatesTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatesTabScreen.swift; sourceTree = "<group>"; };
 		D01C357C2C0793A20006CB5F /* CallsTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsTabScreen.swift; sourceTree = "<group>"; };
 		D09275052C1E34A000C3A8AC /* ChatRoomScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomScreen.swift; sourceTree = "<group>"; };
+		D09275072C1EE06700C3A8AC /* TextInputArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputArea.swift; sourceTree = "<group>"; };
+		D092750A2C1F193900C3A8AC /* MessageListControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListControllerViewController.swift; sourceTree = "<group>"; };
+		D092750C2C1F1DB300C3A8AC /* MessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListView.swift; sourceTree = "<group>"; };
 		D0ECB7BD2C0D79D400524ECE /* CommunityTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityTabScreen.swift; sourceTree = "<group>"; };
 		D0ECB7C02C0D83FA00524ECE /* ChatTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTabbarView.swift; sourceTree = "<group>"; };
 		D0ECB7C22C0E03F100524ECE /* ChanneltemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChanneltemView.swift; sourceTree = "<group>"; };
@@ -98,6 +104,19 @@
 			path = MainTabbar;
 			sourceTree = "<group>";
 		};
+		D09275092C1F190C00C3A8AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D0ECB7C02C0D83FA00524ECE /* ChatTabbarView.swift */,
+				D09275072C1EE06700C3A8AC /* TextInputArea.swift */,
+				D092750A2C1F193900C3A8AC /* MessageListControllerViewController.swift */,
+				D092750C2C1F1DB300C3A8AC /* MessageListView.swift */,
+				D09275052C1E34A000C3A8AC /* ChatRoomScreen.swift */,
+				D0ECB7C22C0E03F100524ECE /* ChanneltemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		D0ECB7BA2C0D797700524ECE /* Updates */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,9 +144,7 @@
 		D0ECB7BF2C0D83C000524ECE /* Chats */ = {
 			isa = PBXGroup;
 			children = (
-				D0ECB7C02C0D83FA00524ECE /* ChatTabbarView.swift */,
-				D0ECB7C22C0E03F100524ECE /* ChanneltemView.swift */,
-				D09275052C1E34A000C3A8AC /* ChatRoomScreen.swift */,
+				D09275092C1F190C00C3A8AC /* Views */,
 			);
 			path = Chats;
 			sourceTree = "<group>";
@@ -216,8 +233,11 @@
 				D0ECB7C12C0D83FA00524ECE /* ChatTabbarView.swift in Sources */,
 				D0ECB7C82C0E089200524ECE /* SettingItemView.swift in Sources */,
 				D01C35752C0459C70006CB5F /* UpdatesTabScreen.swift in Sources */,
+				D09275082C1EE06700C3A8AC /* TextInputArea.swift in Sources */,
 				D0ECB7C62C0E07D400524ECE /* SettingsTabScreen.swift in Sources */,
 				D0ECB7C32C0E03F100524ECE /* ChanneltemView.swift in Sources */,
+				D092750B2C1F193900C3A8AC /* MessageListControllerViewController.swift in Sources */,
+				D092750D2C1F1DB300C3A8AC /* MessageListView.swift in Sources */,
 				D09275062C1E34A000C3A8AC /* ChatRoomScreen.swift in Sources */,
 				D01C357D2C0793A20006CB5F /* CallsTabScreen.swift in Sources */,
 				D0ECB7BE2C0D79D400524ECE /* CommunityTabScreen.swift in Sources */,
