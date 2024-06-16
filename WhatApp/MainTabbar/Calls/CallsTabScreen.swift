@@ -62,7 +62,7 @@ extension CallsTabScreen {
         
         private func recentCallsTextView()  -> some View {
             VStack(alignment:.leading){
-                Text("John Smith")
+                Text("kels")
                 HStack(spacing:5){
                    Image(systemName: "phone.arrow.up.right.fill")
                     Text("Outgoing")
