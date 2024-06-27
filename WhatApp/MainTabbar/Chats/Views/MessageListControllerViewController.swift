@@ -53,7 +53,7 @@ let cellIdentifier = "cell1"
             BubbleTextView(item: message)
             switch message.type {
             case.photo:
-                BubbleTextView(item: message)
+                BubbleImageView(item: message)
             case.text:
                 BubbleTextView(item: message)
             case.video:

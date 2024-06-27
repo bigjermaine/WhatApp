@@ -94,8 +94,14 @@ struct BubbleImageView: View {
                     .frame(width: 15,height: 15)
             }
                  
-            
         }
+        .padding(.vertical,2.5)
+        .padding(.horizontal,8)
+        .foregroundColor(.white)
+        .foregroundStyle(.white)
+        .background(Color(.systemGray3))
+        .clipShape(Capsule())
+        .padding(12)
     }
 }
 
