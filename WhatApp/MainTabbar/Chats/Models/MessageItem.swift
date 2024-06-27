@@ -6,12 +6,19 @@
 //
 
 import Foundation
-
+import SwiftUI
 
 struct MessageItem:Identifiable {
     let id = UUID().uuidString
     let text:String
     let direction:MessageDirection
+    static let sentPlaceHolder = MessageItem(text: "Holy spagehetti", direction: .sent)
+    static let receivePlaceHolder = MessageItem(text: "Holy spagehetti", direction: .received)
+    
+    var backgroundColor:Color {
+        return direction  == .sent ? .bubbleGreen : .bubbleWhite
+        
+    }
 }
 
 

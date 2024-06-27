@@ -16,6 +16,7 @@ let cellIdentifier = "cell1"
         tableView.delegate =  self
         tableView.dataSource = self
         tableView.backgroundColor = .red
+        tableView.separatorStyle = .none
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
@@ -45,14 +46,11 @@ let cellIdentifier = "cell1"
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
-        cell.backgroundColor = UIColor.gray.withAlphaComponent(0.1)
+        cell.backgroundColor = .clear
+        cell.selectionStyle = .none
+        
         cell.contentConfiguration = UIHostingConfiguration {
-            Text("PLACEHOLDER")
-                .font(.largeTitle)
-                .bold()
-                .frame(maxWidth:.infinity)
-                .frame(height:200)
-                .background(Color.gray.opacity(0.1))
+            BubbleTextView(item: .receivePlaceHolder)
         }
         return cell
     }
