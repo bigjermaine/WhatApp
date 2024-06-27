@@ -16,6 +16,7 @@
 		D031615C2C2D3AD1004B6D52 /* BubbleTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D031615B2C2D3AD1004B6D52 /* BubbleTextView.swift */; };
 		D031615E2C2D3D81004B6D52 /* BubbleTailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D031615D2C2D3D81004B6D52 /* BubbleTailView.swift */; };
 		D03161612C2D3FC7004B6D52 /* BubbleTailModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03161602C2D3FC7004B6D52 /* BubbleTailModifier.swift */; };
+		D03161632C2DA025004B6D52 /* BubbleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03161622C2DA025004B6D52 /* BubbleImageView.swift */; };
 		D07C23FC2C24CDD800C5316F /* MessageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07C23FB2C24CDD800C5316F /* MessageItem.swift */; };
 		D09275062C1E34A000C3A8AC /* ChatRoomScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09275052C1E34A000C3A8AC /* ChatRoomScreen.swift */; };
 		D09275082C1EE06700C3A8AC /* TextInputArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09275072C1EE06700C3A8AC /* TextInputArea.swift */; };
@@ -40,6 +41,7 @@
 		D031615B2C2D3AD1004B6D52 /* BubbleTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleTextView.swift; sourceTree = "<group>"; };
 		D031615D2C2D3D81004B6D52 /* BubbleTailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleTailView.swift; sourceTree = "<group>"; };
 		D03161602C2D3FC7004B6D52 /* BubbleTailModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleTailModifier.swift; sourceTree = "<group>"; };
+		D03161622C2DA025004B6D52 /* BubbleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleImageView.swift; sourceTree = "<group>"; };
 		D07C23FB2C24CDD800C5316F /* MessageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageItem.swift; sourceTree = "<group>"; };
 		D09275052C1E34A000C3A8AC /* ChatRoomScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomScreen.swift; sourceTree = "<group>"; };
 		D09275072C1EE06700C3A8AC /* TextInputArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputArea.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				D0ECB7C22C0E03F100524ECE /* ChanneltemView.swift */,
 				D031615B2C2D3AD1004B6D52 /* BubbleTextView.swift */,
 				D031615D2C2D3D81004B6D52 /* BubbleTailView.swift */,
+				D03161622C2DA025004B6D52 /* BubbleImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				D031615E2C2D3D81004B6D52 /* BubbleTailView.swift in Sources */,
 				D0ECB7C32C0E03F100524ECE /* ChanneltemView.swift in Sources */,
 				D092750B2C1F193900C3A8AC /* MessageListControllerViewController.swift in Sources */,
+				D03161632C2DA025004B6D52 /* BubbleImageView.swift in Sources */,
 				D092750D2C1F1DB300C3A8AC /* MessageListView.swift in Sources */,
 				D03161612C2D3FC7004B6D52 /* BubbleTailModifier.swift in Sources */,
 				D09275062C1E34A000C3A8AC /* ChatRoomScreen.swift in Sources */,

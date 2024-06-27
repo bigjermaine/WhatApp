@@ -14,7 +14,7 @@ struct BubbleTextView: View {
             Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
                 .padding(10)
                 .background(item.backgroundColor)
-                .clipShape(RoundedRectangle(cornerRadius: 10, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/))
+                .clipShape(RoundedRectangle(cornerRadius: 16, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/))
                 .applyTail(item.direction)
             timeStampTextView()
         }
@@ -45,4 +45,6 @@ struct BubbleTextView: View {
         BubbleTextView(item:.sentPlaceHolder)
         BubbleTextView(item:.receivePlaceHolder)
     }
+    .frame(maxWidth: .infinity)
+    .background(Color.gray.opacity(0.3))
 }

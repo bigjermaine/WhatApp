@@ -41,18 +41,32 @@ let cellIdentifier = "cell1"
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return MessageItem.stubMessages.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
         cell.backgroundColor = .clear
         cell.selectionStyle = .none
-        
+        let message = MessageItem.stubMessages[indexPath.row]
         cell.contentConfiguration = UIHostingConfiguration {
-            BubbleTextView(item: .receivePlaceHolder)
+            BubbleTextView(item: message)
+            switch message.type {
+            case.photo:
+                BubbleTextView(item: message)
+            case.text:
+                BubbleTextView(item: message)
+            case.video:
+                BubbleTextView(item: message)
+                
+            }
+            
         }
         return cell
     }
    
+}
+
+#Preview {
+  MessageListView()
 }
