@@ -13,6 +13,8 @@
 		D01C35622BFDF3530006CB5F /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01C35612BFDF3530006CB5F /* MainTabView.swift */; };
 		D01C35752C0459C70006CB5F /* UpdatesTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01C35742C0459C70006CB5F /* UpdatesTabScreen.swift */; };
 		D01C357D2C0793A20006CB5F /* CallsTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01C357C2C0793A20006CB5F /* CallsTabScreen.swift */; };
+		D031615C2C2D3AD1004B6D52 /* BubbleTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D031615B2C2D3AD1004B6D52 /* BubbleTextView.swift */; };
+		D07C23FC2C24CDD800C5316F /* MessageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07C23FB2C24CDD800C5316F /* MessageItem.swift */; };
 		D09275062C1E34A000C3A8AC /* ChatRoomScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09275052C1E34A000C3A8AC /* ChatRoomScreen.swift */; };
 		D09275082C1EE06700C3A8AC /* TextInputArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09275072C1EE06700C3A8AC /* TextInputArea.swift */; };
 		D092750B2C1F193900C3A8AC /* MessageListControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D092750A2C1F193900C3A8AC /* MessageListControllerViewController.swift */; };
@@ -33,6 +35,8 @@
 		D01C35612BFDF3530006CB5F /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		D01C35742C0459C70006CB5F /* UpdatesTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatesTabScreen.swift; sourceTree = "<group>"; };
 		D01C357C2C0793A20006CB5F /* CallsTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsTabScreen.swift; sourceTree = "<group>"; };
+		D031615B2C2D3AD1004B6D52 /* BubbleTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleTextView.swift; sourceTree = "<group>"; };
+		D07C23FB2C24CDD800C5316F /* MessageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageItem.swift; sourceTree = "<group>"; };
 		D09275052C1E34A000C3A8AC /* ChatRoomScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomScreen.swift; sourceTree = "<group>"; };
 		D09275072C1EE06700C3A8AC /* TextInputArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputArea.swift; sourceTree = "<group>"; };
 		D092750A2C1F193900C3A8AC /* MessageListControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListControllerViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +108,14 @@
 			path = MainTabbar;
 			sourceTree = "<group>";
 		};
+		D07C23FA2C24CDC200C5316F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D07C23FB2C24CDD800C5316F /* MessageItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		D09275092C1F190C00C3A8AC /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +125,7 @@
 				D092750C2C1F1DB300C3A8AC /* MessageListView.swift */,
 				D09275052C1E34A000C3A8AC /* ChatRoomScreen.swift */,
 				D0ECB7C22C0E03F100524ECE /* ChanneltemView.swift */,
+				D031615B2C2D3AD1004B6D52 /* BubbleTextView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -144,6 +157,7 @@
 		D0ECB7BF2C0D83C000524ECE /* Chats */ = {
 			isa = PBXGroup;
 			children = (
+				D07C23FA2C24CDC200C5316F /* Models */,
 				D09275092C1F190C00C3A8AC /* Views */,
 			);
 			path = Chats;
@@ -240,6 +254,8 @@
 				D092750D2C1F1DB300C3A8AC /* MessageListView.swift in Sources */,
 				D09275062C1E34A000C3A8AC /* ChatRoomScreen.swift in Sources */,
 				D01C357D2C0793A20006CB5F /* CallsTabScreen.swift in Sources */,
+				D031615C2C2D3AD1004B6D52 /* BubbleTextView.swift in Sources */,
+				D07C23FC2C24CDD800C5316F /* MessageItem.swift in Sources */,
 				D0ECB7BE2C0D79D400524ECE /* CommunityTabScreen.swift in Sources */,
 				D01C34AE2BFDEB490006CB5F /* WhatAppApp.swift in Sources */,
 				D01C35622BFDF3530006CB5F /* MainTabView.swift in Sources */,
