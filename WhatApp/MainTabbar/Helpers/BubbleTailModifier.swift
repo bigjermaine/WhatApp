@@ -24,7 +24,7 @@ private struct BubbleModifier:ViewModifier {
 
 
 extension View {
-    func applyTail(_ direction:MessageDirection) -> some View {
+    func  applyTail(_ direction:MessageDirection) -> some View {
         self.modifier(BubbleModifier(direction:direction))
     }
 }

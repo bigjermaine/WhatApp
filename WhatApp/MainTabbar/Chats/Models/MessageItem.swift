@@ -19,6 +19,10 @@ struct MessageItem:Identifiable {
         return direction  == .sent ? .bubbleGreen : .bubbleWhite
         
     }
+    
+    var alignment:Alignment {
+        return direction == .received ? .leading :.trailing
+    }
 }
 
 
