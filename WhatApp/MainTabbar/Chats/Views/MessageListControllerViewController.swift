@@ -58,7 +58,8 @@ let cellIdentifier = "cell1"
                 BubbleTextView(item: message)
             case.video:
                 BubbleTextView(item: message)
-                
+            case.audio:
+                BubbleAudioView(item: message)
             }
             
         }

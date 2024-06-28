@@ -29,11 +29,12 @@ struct MessageItem:Identifiable {
         .init(text: "Hi There", type: .text, direction: .sent),
         .init(text: "Check Out This Photo", type: .photo, direction: .received),
         .init(text: "Check Out This Photo", type: .video, direction: .sent),
+        .init(text: "", type: .audio, direction: .sent),
     ]
 }
 
 enum MessageType {
-    case text, photo, video
+    case text, photo, video, audio
 }
 
 enum MessageDirection {
