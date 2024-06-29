@@ -18,6 +18,7 @@ struct AuthHeaderView: View {
             Text("whatApp")
                 .font(.largeTitle)
                 .foregroundStyle(.white)
+                .fontWeight(.semibold)
         }
     }
 }

@@ -44,6 +44,7 @@
 		D03161982C2E500E004B6D52 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D03161972C2E500D004B6D52 /* GoogleService-Info.plist */; };
 		D031619C2C2E5379004B6D52 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D031619B2C2E5379004B6D52 /* LoginScreen.swift */; };
 		D031619E2C2E53E5004B6D52 /* AuthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D031619D2C2E53E5004B6D52 /* AuthHeaderView.swift */; };
+		D03161A02C2E5676004B6D52 /* AuthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D031619F2C2E5676004B6D52 /* AuthTextField.swift */; };
 		D07C23FC2C24CDD800C5316F /* MessageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07C23FB2C24CDD800C5316F /* MessageItem.swift */; };
 		D09275062C1E34A000C3A8AC /* ChatRoomScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09275052C1E34A000C3A8AC /* ChatRoomScreen.swift */; };
 		D09275082C1EE06700C3A8AC /* TextInputArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09275072C1EE06700C3A8AC /* TextInputArea.swift */; };
@@ -73,6 +74,7 @@
 		D03161972C2E500D004B6D52 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D031619B2C2E5379004B6D52 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		D031619D2C2E53E5004B6D52 /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
+		D031619F2C2E5676004B6D52 /* AuthTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTextField.swift; sourceTree = "<group>"; };
 		D07C23FB2C24CDD800C5316F /* MessageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageItem.swift; sourceTree = "<group>"; };
 		D09275052C1E34A000C3A8AC /* ChatRoomScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomScreen.swift; sourceTree = "<group>"; };
 		D09275072C1EE06700C3A8AC /* TextInputArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputArea.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 			children = (
 				D031619B2C2E5379004B6D52 /* LoginScreen.swift */,
 				D031619D2C2E53E5004B6D52 /* AuthHeaderView.swift */,
+				D031619F2C2E5676004B6D52 /* AuthTextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				D031619C2C2E5379004B6D52 /* LoginScreen.swift in Sources */,
 				D03161612C2D3FC7004B6D52 /* BubbleTailModifier.swift in Sources */,
 				D09275062C1E34A000C3A8AC /* ChatRoomScreen.swift in Sources */,
+				D03161A02C2E5676004B6D52 /* AuthTextField.swift in Sources */,
 				D01C357D2C0793A20006CB5F /* CallsTabScreen.swift in Sources */,
 				D031615C2C2D3AD1004B6D52 /* BubbleTextView.swift in Sources */,
 				D07C23FC2C24CDD800C5316F /* MessageItem.swift in Sources */,
