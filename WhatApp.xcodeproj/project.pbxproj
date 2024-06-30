@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D006EC912C312AAB00B7E388 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D006EC902C312AAB00B7E388 /* AuthButton.swift */; };
+		D006EC932C31303A00B7E388 /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D006EC922C31303A00B7E388 /* SignUpScreen.swift */; };
 		D01C34AE2BFDEB490006CB5F /* WhatAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01C34AD2BFDEB490006CB5F /* WhatAppApp.swift */; };
 		D01C34B22BFDEB4B0006CB5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D01C34B12BFDEB4B0006CB5F /* Assets.xcassets */; };
 		D01C34B52BFDEB4B0006CB5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D01C34B42BFDEB4B0006CB5F /* Preview Assets.xcassets */; };
@@ -59,6 +61,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D006EC902C312AAB00B7E388 /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
+		D006EC922C31303A00B7E388 /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
 		D01C34AA2BFDEB490006CB5F /* WhatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D01C34AD2BFDEB490006CB5F /* WhatAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatAppApp.swift; sourceTree = "<group>"; };
 		D01C34B12BFDEB4B0006CB5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -195,6 +199,8 @@
 				D031619B2C2E5379004B6D52 /* LoginScreen.swift */,
 				D031619D2C2E53E5004B6D52 /* AuthHeaderView.swift */,
 				D031619F2C2E5676004B6D52 /* AuthTextField.swift */,
+				D006EC902C312AAB00B7E388 /* AuthButton.swift */,
+				D006EC922C31303A00B7E388 /* SignUpScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -367,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0ECB7CA2C0E0A8C00524ECE /* SettingDataModel.swift in Sources */,
+				D006EC912C312AAB00B7E388 /* AuthButton.swift in Sources */,
 				D0ECB7C12C0D83FA00524ECE /* ChatTabbarView.swift in Sources */,
 				D0ECB7C82C0E089200524ECE /* SettingItemView.swift in Sources */,
 				D031619E2C2E53E5004B6D52 /* AuthHeaderView.swift in Sources */,
@@ -375,6 +382,7 @@
 				D0ECB7C62C0E07D400524ECE /* SettingsTabScreen.swift in Sources */,
 				D031615E2C2D3D81004B6D52 /* BubbleTailView.swift in Sources */,
 				D0ECB7C32C0E03F100524ECE /* ChanneltemView.swift in Sources */,
+				D006EC932C31303A00B7E388 /* SignUpScreen.swift in Sources */,
 				D092750B2C1F193900C3A8AC /* MessageListControllerViewController.swift in Sources */,
 				D03161632C2DA025004B6D52 /* BubbleImageView.swift in Sources */,
 				D092750D2C1F1DB300C3A8AC /* MessageListView.swift in Sources */,
