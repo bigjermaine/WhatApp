@@ -12,7 +12,9 @@ struct WhatAppApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     var body: some Scene {
         WindowGroup {
-            MainTabView()
+            NavigationStack{
+                LoginScreen()
+            }
         }
     }
 }
