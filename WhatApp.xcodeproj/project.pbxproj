@@ -10,6 +10,7 @@
 		D006EC912C312AAB00B7E388 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D006EC902C312AAB00B7E388 /* AuthButton.swift */; };
 		D006EC932C31303A00B7E388 /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D006EC922C31303A00B7E388 /* SignUpScreen.swift */; };
 		D006EC962C314CC300B7E388 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D006EC952C314CC300B7E388 /* AuthViewModel.swift */; };
+		D006EC992C322F7300B7E388 /* AuthenticationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D006EC982C322F7300B7E388 /* AuthenticationProvider.swift */; };
 		D01C34AE2BFDEB490006CB5F /* WhatAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01C34AD2BFDEB490006CB5F /* WhatAppApp.swift */; };
 		D01C34B22BFDEB4B0006CB5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D01C34B12BFDEB4B0006CB5F /* Assets.xcassets */; };
 		D01C34B52BFDEB4B0006CB5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D01C34B42BFDEB4B0006CB5F /* Preview Assets.xcassets */; };
@@ -65,6 +66,7 @@
 		D006EC902C312AAB00B7E388 /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
 		D006EC922C31303A00B7E388 /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
 		D006EC952C314CC300B7E388 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		D006EC982C322F7300B7E388 /* AuthenticationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationProvider.swift; sourceTree = "<group>"; };
 		D01C34AA2BFDEB490006CB5F /* WhatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D01C34AD2BFDEB490006CB5F /* WhatAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatAppApp.swift; sourceTree = "<group>"; };
 		D01C34B12BFDEB4B0006CB5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -136,6 +138,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		D006EC972C322F5A00B7E388 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D006EC982C322F7300B7E388 /* AuthenticationProvider.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		D01C34A12BFDEB490006CB5F = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +208,7 @@
 		D03161992C2E535C004B6D52 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				D006EC972C322F5A00B7E388 /* Services */,
 				D006EC942C314CA800B7E388 /* ViewModel */,
 				D031619A2C2E5366004B6D52 /* Views */,
 			);
@@ -408,6 +419,7 @@
 				D03161652C2DAC9B004B6D52 /* BubbleAudioView.swift in Sources */,
 				D01C34AE2BFDEB490006CB5F /* WhatAppApp.swift in Sources */,
 				D006EC962C314CC300B7E388 /* AuthViewModel.swift in Sources */,
+				D006EC992C322F7300B7E388 /* AuthenticationProvider.swift in Sources */,
 				D01C35622BFDF3530006CB5F /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
