@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "1498C5C7-1D8C-408D-88DD-CF9CA970320C"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "862E2827-D67A-45EC-8B83-4401054F12EC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WhatApp/MainTabbar/Auth/Services/AuthenticationProvider.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "creatAccount(for:with:and:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "862E2827-D67A-45EC-8B83-4401054F12EC - a3e38a492ed480b8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for WhatApp.AuthManager.creatAccount(for: Swift.String, with: Swift.String, and: Swift.String) async throws -&gt; ()"
+                  moduleName = "WhatApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookair/Desktop/WhatApp/WhatApp/MainTabbar/Auth/Services/AuthenticationProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "448">
+               </Location>
+               <Location
+                  uuid = "862E2827-D67A-45EC-8B83-4401054F12EC - 132a17ca2d6d7205"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) await resume partial function for WhatApp.AuthManager.creatAccount(for: Swift.String, with: Swift.String, and: Swift.String) async throws -&gt; ()"
+                  moduleName = "WhatApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookair/Desktop/WhatApp/WhatApp/MainTabbar/Auth/Services/AuthenticationProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "862E2827-D67A-45EC-8B83-4401054F12EC - 4e2f494fd57a4cba"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for WhatApp.AuthManager.creatAccount(for: Swift.String, with: Swift.String, and: Swift.String) async throws -&gt; ()"
+                  moduleName = "WhatApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookair/Desktop/WhatApp/WhatApp/MainTabbar/Auth/Services/AuthenticationProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "862E2827-D67A-45EC-8B83-4401054F12EC - f97b0842fb0308a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for WhatApp.AuthManager.creatAccount(for: Swift.String, with: Swift.String, and: Swift.String) async throws -&gt; ()"
+                  moduleName = "WhatApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookair/Desktop/WhatApp/WhatApp/MainTabbar/Auth/Services/AuthenticationProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

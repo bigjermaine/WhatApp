@@ -7,12 +7,15 @@
 
 import SwiftUI
 import FirebaseCore
+import Firebase
 @main
 struct WhatAppApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     var body: some Scene {
         WindowGroup {
-            LoginScreen()
+            NavigationStack{
+                LoginScreen()
+            }
         }
     }
 }
@@ -20,7 +23,9 @@ struct WhatAppApp: App {
 class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-    FirebaseApp.configure()
+      let providerFactory = AppCheckDebugProviderFactory()
+      AppCheck.setAppCheckProviderFactory(providerFactory)
+      FirebaseApp.configure()
     return true
   }
 }
