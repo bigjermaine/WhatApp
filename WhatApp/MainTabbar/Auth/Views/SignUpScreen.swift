@@ -18,7 +18,7 @@ struct SignUpScreen: View {
             AuthTextField(type: AuthTextField.InputType.custom("Username", "at"), text: $authScrennModel.username)
             AuthTextField(type: .password, text: $authScrennModel.password)
             AuthButton(title: "Create an Account") {
-                
+                Task { await authScrennModel.handleSignUp()}
             }
             .disabled(authScrennModel.disableSignuputton)
             Spacer()
