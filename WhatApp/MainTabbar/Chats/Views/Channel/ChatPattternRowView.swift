@@ -16,7 +16,6 @@ struct ChatPattternRowView: View {
             VStack(alignment:.leading){
                 Text(user.username)
                     .bold()
-                    .foregroundStyle(.whatsAppBlack)
                 Text(user.bioUnwrapped)
                     .font(.caption)
                     .foregroundStyle(.gray)

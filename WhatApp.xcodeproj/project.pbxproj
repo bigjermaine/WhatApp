@@ -18,6 +18,8 @@
 		D006ED502C33C8A900B7E388 /* FireBaseConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D006ED4F2C33C8A900B7E388 /* FireBaseConstants.swift */; };
 		D006ED522C33E8BB00B7E388 /* ChatPickerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D006ED512C33E8BB00B7E388 /* ChatPickerScreen.swift */; };
 		D006ED552C33F1C400B7E388 /* ChatPattternRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D006ED542C33F1C400B7E388 /* ChatPattternRowView.swift */; };
+		D006ED582C34104600B7E388 /* ChatPartnerPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D006ED572C34104600B7E388 /* ChatPartnerPickerViewModel.swift */; };
+		D006ED5A2C34154200B7E388 /* AddGroupChatPatterner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D006ED592C34154100B7E388 /* AddGroupChatPatterner.swift */; };
 		D01C34AE2BFDEB490006CB5F /* WhatAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01C34AD2BFDEB490006CB5F /* WhatAppApp.swift */; };
 		D01C34B22BFDEB4B0006CB5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D01C34B12BFDEB4B0006CB5F /* Assets.xcassets */; };
 		D01C34B52BFDEB4B0006CB5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D01C34B42BFDEB4B0006CB5F /* Preview Assets.xcassets */; };
@@ -80,6 +82,8 @@
 		D006ED4F2C33C8A900B7E388 /* FireBaseConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseConstants.swift; sourceTree = "<group>"; };
 		D006ED512C33E8BB00B7E388 /* ChatPickerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPickerScreen.swift; sourceTree = "<group>"; };
 		D006ED542C33F1C400B7E388 /* ChatPattternRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPattternRowView.swift; sourceTree = "<group>"; };
+		D006ED572C34104600B7E388 /* ChatPartnerPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPartnerPickerViewModel.swift; sourceTree = "<group>"; };
+		D006ED592C34154100B7E388 /* AddGroupChatPatterner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroupChatPatterner.swift; sourceTree = "<group>"; };
 		D01C34AA2BFDEB490006CB5F /* WhatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D01C34AD2BFDEB490006CB5F /* WhatAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatAppApp.swift; sourceTree = "<group>"; };
 		D01C34B12BFDEB4B0006CB5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -204,9 +208,18 @@
 			children = (
 				D006ED512C33E8BB00B7E388 /* ChatPickerScreen.swift */,
 				D0ECB7C02C0D83FA00524ECE /* ChatTabbarView.swift */,
+				D006ED592C34154100B7E388 /* AddGroupChatPatterner.swift */,
 				D006ED542C33F1C400B7E388 /* ChatPattternRowView.swift */,
 			);
 			path = Channel;
+			sourceTree = "<group>";
+		};
+		D006ED562C34101800B7E388 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D006ED572C34104600B7E388 /* ChatPartnerPickerViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		D01C34A12BFDEB490006CB5F = {
@@ -304,6 +317,7 @@
 		D09275092C1F190C00C3A8AC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D006ED562C34101800B7E388 /* ViewModel */,
 				D006ED532C33EF2200B7E388 /* Channel */,
 				D09275072C1EE06700C3A8AC /* TextInputArea.swift */,
 				D092750A2C1F193900C3A8AC /* MessageListControllerViewController.swift */,
@@ -465,6 +479,7 @@
 				D006ED4B2C33C12E00B7E388 /* RootScreenViewModel.swift in Sources */,
 				D0ECB7C12C0D83FA00524ECE /* ChatTabbarView.swift in Sources */,
 				D0ECB7C82C0E089200524ECE /* SettingItemView.swift in Sources */,
+				D006ED5A2C34154200B7E388 /* AddGroupChatPatterner.swift in Sources */,
 				D006ED4D2C33C80800B7E388 /* UserItem.swift in Sources */,
 				D031619E2C2E53E5004B6D52 /* AuthHeaderView.swift in Sources */,
 				D01C35752C0459C70006CB5F /* UpdatesTabScreen.swift in Sources */,
@@ -492,6 +507,7 @@
 				D01C34AE2BFDEB490006CB5F /* WhatAppApp.swift in Sources */,
 				D006EC962C314CC300B7E388 /* AuthViewModel.swift in Sources */,
 				D006EC992C322F7300B7E388 /* AuthenticationProvider.swift in Sources */,
+				D006ED582C34104600B7E388 /* ChatPartnerPickerViewModel.swift in Sources */,
 				D01C35622BFDF3530006CB5F /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
