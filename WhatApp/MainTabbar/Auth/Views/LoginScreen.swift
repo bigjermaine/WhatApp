@@ -8,22 +8,27 @@
 import SwiftUI
 
 struct LoginScreen: View {
-    @StateObject private var authScrennModel = AUthScrennModel()
+    @StateObject private var authScreenModel = AuthScreenViewModel()
     var body: some View {
         VStack{
             Spacer()
             AuthHeaderView()
-            AuthTextField(type: .email, text: $authScrennModel.email)
-            AuthTextField(type: .password, text: $authScrennModel.password)
+            AuthTextField(type: .email, text: $authScreenModel.email)
+            AuthTextField(type: .password, text: $authScreenModel.password)
             ForgptPasswordButton()
             AuthButton(title: "Log in now") {
-                
+                Task{
+                    await authScreenModel.handleLoginIn()
+                }
             }
-            .disabled(authScrennModel.disableLoginButton)
+            .disabled(authScreenModel.disableLoginButton)
             Spacer()
             signUpButton()
                 .padding(.bottom,20)
         }
+        .alert(isPresented: $authScreenModel.errorState.showError, content: {
+            Alert(title: Text(authScreenModel.errorState.errorMessage),dismissButton: .default(Text("Ok")))
+        })
         .frame(maxWidth: .infinity,maxHeight: .infinity)
         .background(Color.teal.gradient)
         .ignoresSafeArea()
@@ -45,7 +50,7 @@ struct LoginScreen: View {
     private func signUpButton() -> some View {
         NavigationLink {
            SignUpScreen()
-                .environmentObject(authScrennModel)
+                .environmentObject(authScreenModel)
         }label: {
             HStack{
                 Image(systemName: "sparkles")

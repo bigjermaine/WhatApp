@@ -7,25 +7,34 @@
 
 import SwiftUI
 import FirebaseCore
-import Firebase
+import FirebaseAppCheck
 @main
 struct WhatAppApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     var body: some Scene {
         WindowGroup {
             NavigationStack{
-                LoginScreen()
+                RootScreen()
             }
         }
     }
 }
 
-class AppDelegate: NSObject, UIApplicationDelegate {
+class AppDelegate: NSObject, UIApplicationDelegate{
+  
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-      let providerFactory = AppCheckDebugProviderFactory()
-      AppCheck.setAppCheckProviderFactory(providerFactory)
+
       FirebaseApp.configure()
     return true
+      
+     
   }
+    
+   
+}
+class YourAppCheckProviderFactory: NSObject, AppCheckProviderFactory {
+    func createProvider(with app: FirebaseApp) -> AppCheckProvider? {
+        return AppAttestProvider(app: app)
+    }
 }

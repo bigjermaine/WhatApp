@@ -9,18 +9,18 @@ import SwiftUI
 
 struct SignUpScreen: View {
     @Environment(\.dismiss) private var dimiss
-    @EnvironmentObject private var authScrennModel:AUthScrennModel
+    @EnvironmentObject private var authScreenModel:AuthScreenViewModel
     var body: some View {
         VStack{
             Spacer()
             AuthHeaderView()
-            AuthTextField(type: .email, text:$authScrennModel.email)
-            AuthTextField(type: AuthTextField.InputType.custom("Username", "at"), text: $authScrennModel.username)
-            AuthTextField(type: .password, text: $authScrennModel.password)
+            AuthTextField(type: .email, text:$authScreenModel.email)
+            AuthTextField(type: AuthTextField.InputType.custom("Username", "at"), text: $authScreenModel.username)
+            AuthTextField(type: .password, text: $authScreenModel.password)
             AuthButton(title: "Create an Account") {
-                Task { await authScrennModel.handleSignUp()}
+                Task { await authScreenModel.handleSignUp()}
             }
-            .disabled(authScrennModel.disableSignuputton)
+            .disabled(authScreenModel.disableSignuputton)
             Spacer()
             backButton()
                 .padding(.bottom,20)
@@ -31,6 +31,9 @@ struct SignUpScreen: View {
         }
         .ignoresSafeArea()
         .navigationBarBackButtonHidden()
+        .alert(isPresented: $authScreenModel.errorState.showError, content: {
+            Alert(title: Text(authScreenModel.errorState.errorMessage),dismissButton: .default(Text("Ok")))
+        })
     }
     private func  backButton() -> some View {
         Button{
@@ -49,8 +52,8 @@ struct SignUpScreen: View {
         }
     }
 }
-let authScrennModel = AUthScrennModel()
+
 #Preview {
     SignUpScreen()
-        .environmentObject(authScrennModel)
+        
 }

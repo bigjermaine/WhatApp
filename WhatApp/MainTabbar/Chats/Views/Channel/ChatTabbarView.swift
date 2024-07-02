@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ChatTabbarView: View {
     @State private var searchText:String = ""
+    @State private var showChatPartnerPickerView = false
     var body: some View {
         NavigationStack{
             List{
@@ -30,6 +31,9 @@ struct ChatTabbarView: View {
                 trailingNavItems()
                 
             }
+            .sheet(isPresented: $showChatPartnerPickerView) {
+                ChatPickerScreen()
+            }
         }
     }
 }
@@ -41,7 +45,7 @@ extension ChatTabbarView {
             Text("Your personal messages are")
             +
             Text("end-to-end encrpted")
-                .foregroundStyle(.blue)
+                .foregroundColor(.blue)
         }
         .foregroundColor(.gray)
         .font(.caption)
@@ -91,7 +95,7 @@ extension ChatTabbarView {
     
     private func newChatButton() -> some View {
         Button{
-            
+            showChatPartnerPickerView = true
         }label: {
             Image(.plus)
         }
