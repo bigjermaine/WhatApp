@@ -11,6 +11,7 @@
 		D006EC932C31303A00B7E388 /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D006EC922C31303A00B7E388 /* SignUpScreen.swift */; };
 		D006EC962C314CC300B7E388 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D006EC952C314CC300B7E388 /* AuthViewModel.swift */; };
 		D006EC992C322F7300B7E388 /* AuthenticationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D006EC982C322F7300B7E388 /* AuthenticationProvider.swift */; };
+		D006ED432C33732D00B7E388 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D006ED422C33732D00B7E388 /* GoogleService-Info.plist */; };
 		D01C34AE2BFDEB490006CB5F /* WhatAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01C34AD2BFDEB490006CB5F /* WhatAppApp.swift */; };
 		D01C34B22BFDEB4B0006CB5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D01C34B12BFDEB4B0006CB5F /* Assets.xcassets */; };
 		D01C34B52BFDEB4B0006CB5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D01C34B42BFDEB4B0006CB5F /* Preview Assets.xcassets */; };
@@ -45,7 +46,6 @@
 		D03161902C2E4F8A004B6D52 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = D031618F2C2E4F8A004B6D52 /* FirebaseMessaging */; };
 		D03161922C2E4F8A004B6D52 /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = D03161912C2E4F8A004B6D52 /* FirebasePerformance */; };
 		D03161942C2E4F8A004B6D52 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = D03161932C2E4F8A004B6D52 /* FirebaseStorage */; };
-		D03161982C2E500E004B6D52 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D03161972C2E500D004B6D52 /* GoogleService-Info.plist */; };
 		D031619C2C2E5379004B6D52 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D031619B2C2E5379004B6D52 /* LoginScreen.swift */; };
 		D031619E2C2E53E5004B6D52 /* AuthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D031619D2C2E53E5004B6D52 /* AuthHeaderView.swift */; };
 		D03161A02C2E5676004B6D52 /* AuthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D031619F2C2E5676004B6D52 /* AuthTextField.swift */; };
@@ -67,6 +67,7 @@
 		D006EC922C31303A00B7E388 /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
 		D006EC952C314CC300B7E388 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		D006EC982C322F7300B7E388 /* AuthenticationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationProvider.swift; sourceTree = "<group>"; };
+		D006ED422C33732D00B7E388 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D01C34AA2BFDEB490006CB5F /* WhatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D01C34AD2BFDEB490006CB5F /* WhatAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatAppApp.swift; sourceTree = "<group>"; };
 		D01C34B12BFDEB4B0006CB5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,7 +80,6 @@
 		D03161602C2D3FC7004B6D52 /* BubbleTailModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleTailModifier.swift; sourceTree = "<group>"; };
 		D03161622C2DA025004B6D52 /* BubbleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleImageView.swift; sourceTree = "<group>"; };
 		D03161642C2DAC9B004B6D52 /* BubbleAudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleAudioView.swift; sourceTree = "<group>"; };
-		D03161972C2E500D004B6D52 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D031619B2C2E5379004B6D52 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		D031619D2C2E53E5004B6D52 /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
 		D031619F2C2E5676004B6D52 /* AuthTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTextField.swift; sourceTree = "<group>"; };
@@ -149,6 +149,7 @@
 		D01C34A12BFDEB490006CB5F = {
 			isa = PBXGroup;
 			children = (
+				D006ED422C33732D00B7E388 /* GoogleService-Info.plist */,
 				D01C34AC2BFDEB490006CB5F /* WhatApp */,
 				D01C34AB2BFDEB490006CB5F /* Products */,
 			);
@@ -165,7 +166,6 @@
 		D01C34AC2BFDEB490006CB5F /* WhatApp */ = {
 			isa = PBXGroup;
 			children = (
-				D03161972C2E500D004B6D52 /* GoogleService-Info.plist */,
 				D01C35732C0459A30006CB5F /* MainTabbar */,
 				D01C34AD2BFDEB490006CB5F /* WhatAppApp.swift */,
 				D01C35612BFDF3530006CB5F /* MainTabView.swift */,
@@ -382,8 +382,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D01C34B52BFDEB4B0006CB5F /* Preview Assets.xcassets in Resources */,
-				D03161982C2E500E004B6D52 /* GoogleService-Info.plist in Resources */,
 				D01C34B22BFDEB4B0006CB5F /* Assets.xcassets in Resources */,
+				D006ED432C33732D00B7E388 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,12 +562,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Dexlist.WhatApp;
+				PRODUCT_BUNDLE_IDENTIFIER = jj.jermaine55;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -591,12 +592,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Dexlist.WhatApp;
+				PRODUCT_BUNDLE_IDENTIFIER = jj.jermaine55;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

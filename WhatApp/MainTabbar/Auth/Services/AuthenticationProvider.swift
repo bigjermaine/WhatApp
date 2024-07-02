@@ -12,7 +12,7 @@ import FirebaseDatabase
 
 
 enum AuthState {
-    case pending, loggedin, loggedOut
+    case pending, loggedin(UserItem), loggedOut
 }
 protocol AuthProvider {
     static var shared:AuthProvider{get}
@@ -22,7 +22,19 @@ protocol AuthProvider {
     func logOut() async throws
 }
 
-
+enum AuthError:Error {
+    case accountCreationField(_ description:String)
+    case failedToSaveUserDefault(_ description:String)
+    
+    var errorDescription:String? {
+        switch self{
+        case .accountCreationField(let description):
+            return description
+        case .failedToSaveUserDefault(let description):
+            return description
+        }
+    }
+}
   final class AuthManager:AuthProvider {
     static let shared: AuthProvider = AuthManager()
     
@@ -33,23 +45,53 @@ protocol AuthProvider {
     }
     
     func creatAccount(for userName: String, with email: String, and password: String) async throws {
-        let authResult = try await Auth.auth().createUser(withEmail: email, password: password)
-        let uid = authResult.user.uid
-        let newUser = UserItem(uid: uid, username: userName, email: email)
-        try await saveUserInfoDatabase(user: newUser)
-        
+        do{
+            let authResult = try await Auth.auth().createUser(withEmail: email, password: password)
+            let uid = authResult.user.uid
+            let newUser = UserItem(uid: uid, username: userName, email: email)
+            try await saveUserInfoDatabase(user: newUser)
+            self.authState.send(.loggedin(newUser))
+        }catch let error{
+            throw AuthError.accountCreationField(error.localizedDescription)
+        }
     }
     
     func logOut() async throws {
         
     }
+      
+      func autoLogin() async {
+          if Auth.auth().currentUser == nil {
+              authState.send(.loggedOut)
+          }else {
+              Task{
+                  authState.send(.loggedin(<#T##UserItem#>))
+              }
+          }
+          
+      }
+      private func fetchCurrentUserInfo() async {
+          guard let currentUid = Auth.auth().currentUser?.uid else {return }
+      await Database.database().reference().child("users").child(currentUid).observe(.value){ snapShot in
+              
+          }withCancel: { error in
+              print(error.localizedDescription)
+          }
+      }
+      
+      
+      
 }
 
 
 extension AuthManager {
     private func saveUserInfoDatabase(user:UserItem) async throws {
-        let userDictionary = ["uid":user.uid,"username":user.username,"email":user.email]
-        try await Database.database().reference().child("users").child(user.uid).setValue(userDictionary)
+        do{
+            let userDictionary = ["uid":user.uid,"username":user.username,"email":user.email]
+            try await Database.database().reference().child("users").child(user.uid).setValue(userDictionary)
+        }catch{
+            throw AuthError.accountCreationField(error.localizedDescription)
+        }
     }
 }
 

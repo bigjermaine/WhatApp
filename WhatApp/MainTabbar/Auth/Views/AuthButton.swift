@@ -23,7 +23,7 @@ struct AuthButton: View {
             enter()
         }label: {
             HStack{
-                Text("Login")
+                Text(title)
                 Image(systemName: "arrow.right")
             }
             .font(.headline)

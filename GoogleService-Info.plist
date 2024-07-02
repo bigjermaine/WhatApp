@@ -2,18 +2,22 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CLIENT_ID</key>
+	<string>902501831251-j0843rdtoa73bjgu1avnkdn33rva15ua.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.902501831251-j0843rdtoa73bjgu1avnkdn33rva15ua</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDPaYUsi7uwHFcX8QKeGhGiHtmX2S5uj6Q</string>
+	<string>AIzaSyD5L_jFdCQDaWqOhtH7Zvh681uEwCSMu0Y</string>
 	<key>GCM_SENDER_ID</key>
-	<string>932725893012</string>
+	<string>902501831251</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.Dexlist.WhatApp</string>
+	<string>jj.jermaine55</string>
 	<key>PROJECT_ID</key>
-	<string>desig-e58ff</string>
+	<string>kjkkk-74348</string>
 	<key>STORAGE_BUCKET</key>
-	<string>desig-e58ff.appspot.com</string>
+	<string>kjkkk-74348.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:932725893012:ios:ba96e5f8801772891f9181</string>
+	<string>1:902501831251:ios:d113614dd88290d48c6ca6</string>
+	<key>DATABASE_URL</key>
+	<string>https://kjkkk-74348-default-rtdb.firebaseio.com</string>
 </dict>
 </plist>

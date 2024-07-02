@@ -41,7 +41,7 @@ extension ChatTabbarView {
             Text("Your personal messages are")
             +
             Text("end-to-end encrpted")
-                .foregroundStyle(.blue)
+                .foregroundColor(.blue)
         }
         .foregroundColor(.gray)
         .font(.caption)
