@@ -24,7 +24,16 @@ final class AuthScreenViewModel:ObservableObject {
         return email.isEmpty || password.isEmpty || isLoading
         
     }
-    
+    func handleLoginIn() async {
+        isLoading = true
+        do {
+            try await AuthManager.shared.login(with: email, and: password)
+        }catch{
+            errorState.errorMessage = "Failed to Login an Account \(error.localizedDescription)"
+            errorState.showError = true
+            isLoading = false
+        }
+    }
     func handleSignUp() async {
         isLoading = true
         

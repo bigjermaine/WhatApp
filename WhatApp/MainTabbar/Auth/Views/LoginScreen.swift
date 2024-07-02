@@ -17,7 +17,9 @@ struct LoginScreen: View {
             AuthTextField(type: .password, text: $authScreenModel.password)
             ForgptPasswordButton()
             AuthButton(title: "Log in now") {
-                
+                Task{
+                    await authScreenModel.handleLoginIn()
+                }
             }
             .disabled(authScreenModel.disableLoginButton)
             Spacer()
@@ -48,7 +50,7 @@ struct LoginScreen: View {
     private func signUpButton() -> some View {
         NavigationLink {
            SignUpScreen()
-                .environmentObject(authScrennModel)
+                .environmentObject(authScreenModel)
         }label: {
             HStack{
                 Image(systemName: "sparkles")

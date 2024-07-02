@@ -52,8 +52,8 @@ struct SignUpScreen: View {
         }
     }
 }
-let authScrennModel = AuthScreenViewModel()
+
 #Preview {
     SignUpScreen()
-        .environmentObject(authScrennModel)
+        
 }
