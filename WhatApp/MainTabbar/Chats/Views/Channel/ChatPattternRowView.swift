@@ -8,7 +8,12 @@
 import SwiftUI
 
 struct ChatPattternRowView: View {
-    let user:UserItem
+  private let user:UserItem
+  private let trailingItem:Content
+  init(user: UserItem, trailingItem: () -> Content = {EmptyView()}) {
+    self.user = user
+    self.trailingItem = trailingItem
+  }
     var body: some View {
         HStack{
             Circle()
@@ -21,10 +26,14 @@ struct ChatPattternRowView: View {
                     .foregroundStyle(.gray)
                 
             }
+
+          trailingItem
         }
     }
 }
 
 #Preview {
-    ChatPattternRowView(user: UserItem(uid: "", username: "", email: ""))
+  ChatPattternRowView(user: UserItem(uid: "", username: "", email: "")) {
+    Image(systemName: "xmark")
+  }
 }
